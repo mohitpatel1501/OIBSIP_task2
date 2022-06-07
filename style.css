@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Courgette&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-image: linear-gradient( to bottom, rgb(48, 255, 44),rgb(245, 131, 10));
+}
+
+.container {
+  /* border: 2px solid red; */
+  margin: auto;
+  max-width: 1200px;
+  font-size: 1rem;
+  overflow: hidden;
+  /* border: 2px solid yellow; */
+}
+
+.hero {
+  /* border: 2px solid black; */
+  display: flex;
+  margin-top: 10px;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(171, 244, 249),
+    rgb(255, 193, 23)
+  );
+  /* box-shadow: 0 0 3rem 1rem rgb(247, 155, 17); */
+  z-index: 2;
+  border-radius: 7rem 7rem 7rem 7rem;
+  box-shadow: 0 0.2rem 0.6rem rgb(0, 0, 0);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.right h2 {
+  font-family: "Lobster", cursive;
+  font-size: 1.8rem;
+  color:orangered;
+  text-shadow: 0 0 0.1rem black;
+}
+
+.right h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2.2rem;
+  color :darkslategrey;
+  text-shadow: 0 0 0.3rem rgb(31, 2, 250);
+}
+
+.left img{
+  width: 300px;
+  border-radius: 150px;
+  margin: 23px;
+  padding-left: 10px;
+  
+}
+.sec {
+  display: flex;
+  column-gap: 2rem;
+  padding: 1rem;
+  margin: 0.7rem;
+  border-radius: 0.5rem;
+  background-color: #dffcff;
+  z-index: 1;
+  box-shadow: 0 0.1rem 0.2rem rgb(0, 0, 0);
+}
+
+.shade {
+  margin-top: 0.7rem;
+}
+
+.img_sec {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+ 
+}
+
+.img_sec img {
+  width: 9rem;
+  height: 10rem;
+  filter: drop-shadow(0 0 0.2rem rgb(111, 115, 155));
+}
+
+.title {
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: rgb(74, 18, 195);
+  line-height: 2;
+  font-family: "Ubuntu", cursive;
+  /* text-shadow: 0 0 0.05rem black; */
+}
+
+span {
+  width: 2rem;
+  border: 2px solid black;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid rgb(232, 53, 17);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .container {
+      max-width: 90%;
+    }
+    .sec{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .title{
+        text-align: center;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    html {
+      font-size: 12px;
+    }
+
+    .hero{
+        flex-wrap: wrap-reverse;
+    }
+    
+  }
